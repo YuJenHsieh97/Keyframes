@@ -1,0 +1,163 @@
+img{
+  width: 20vh;
+  height:20vh;
+}
+body{
+  text-align:center;
+  background-image: url(https://images.unsplash.com/photo-1533094588965-900f4014f4c5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=439786c69b3792d17acddf9283150eab&auto=format&fit=crop&w=1050&q=80);
+}
+
+h1{
+  color: skyblue;
+  background-color: white;
+}
+
+#row1{
+  opacity: 0;
+  animation: fadein 2s;
+  animation-fill-mode:forwards;
+}
+
+#row2{
+  opacity: 0;
+  animation: fadein2 3s;
+  animation-fill-mode:forwards;
+}
+
+#row3{
+  opacity: 0;
+  animation: fadein3 4s;
+  animation-fill-mode:forwards;
+}
+
+#row4{
+  opacity: 0;
+  animation: fadein4 5s;
+  animation-fill-mode:forwards;
+}
+
+#up{
+  animation: up 3s;
+  animation-delay: 7s;
+}
+
+#up1{
+  animation: up1 3s;
+  animation-delay: 7s;
+}
+
+#down{
+  animation: down 3s;
+  animation-delay: 7s;
+}
+
+#down1{
+  animation: down1 3s;
+  animation-delay: 7s;
+}
+
+#lrow{
+  animation: lwave 3s;
+  animation-delay: 3s;
+}
+
+#rrow{
+  animation: rwave 3s;
+  animation-delay: 3s;
+}
+
+#l2row{
+  animation: lwave 3s;
+  animation-delay: 4s;
+}
+
+#r2row{
+  animation: rwave 3s;
+  animation-delay: 4s;
+}
+
+#l3row{
+  animation: lwave 3s;
+  animation-delay: 5s;
+}
+
+#r3row{
+  animation: rwave 3s;
+  animation-delay: 5s;
+}
+
+ #l4row{
+   animation: lwave 3s;
+   animation-delay: 6s;
+ }
+ #r4row{
+   animation: rwave 3s;
+   animation-delay: 6s;
+ }
+
+.row{
+  border: 1px;
+}
+@keyframes fadein{
+  0% {opacity: 0}
+  100% {opacity:1}
+}
+@keyframes fadein2{
+  0% {opacity: 0}
+  50% {opacity: 0}
+  100% {opacity: 1}
+}
+
+@keyframes fadein3{
+  0% {opacity: 0}
+  50% {opacity: 0}
+  75%{opacity: 0}
+  100%{opacity:1}
+}
+
+@keyframes fadein4{
+  0%{opacity:0}
+  50%{opacity:0}
+  75%{opacity:0}
+  90%{opacity:0}
+  100%{opacity:1}
+}
+
+@keyframes up{
+  0% {transform:translate3d(0,0,0);}
+  50%{transform: perspective(300px)translate3d(10px,-0,100px);}
+  100% {transform:translate3d(0,0,0);}
+}
+
+@keyframes up1{
+  0% {transform:translate3d(0,0,0);}
+  50%{transform: perspective(300px)translate3d(10px,-0,-100px);}
+  100% {transform:translate3d(0,0,0);}
+}
+@keyframes down{
+  0% {transform:rotate(0deg);}
+  100% {transform:rotate(360deg);}
+}
+
+@keyframes down1{
+  0% {transform: rotate(360deg);}
+  100% {transform: rotate(0deg);}
+}
+
+@keyframes lwave{
+  0% {transform: translate3d(0,0,0);}
+  50%{transform: translate3d(-70px,0,0);}
+  100%{transform: translate3d(0,0,0);}
+}
+
+@keyframes rwave{
+   0% {transform: translate3d(0,0,0);}
+   50%{transform: translate3d(70px,0,0);}
+   100%{transform: translate3d(0,0,0);}
+}
+@media only screen and (max-width: 600px){
+  img{
+    width: 10vh;
+    height: 10vh;
+  }
+}
